@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    [SerializeField] float mainThrust = 100;
-    [SerializeField] float mainRotate = 100;
+
+    [SerializeField] float mainThrust = 2000;
+    [SerializeField] float mainRotate = 5f;
     [SerializeField] AudioClip thrustAudio;
     [SerializeField] ParticleSystem thrustParticles;
     Rigidbody rb;
@@ -55,11 +56,11 @@ public class Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.forward);
+            transform.Rotate(Vector3.forward * mainRotate * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.back);
+            transform.Rotate(-Vector3.forward * mainRotate * Time.deltaTime);
         }
     }
 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3299710627514413184}
   - component: {fileID: 3299710627514413187}
   - component: {fileID: 3299710627514413186}
+  - component: {fileID: 397020937}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3299710627514413189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.4, y: 5.12, z: -0.64}
-  m_LocalScale: {x: 6.0428762, y: 11.532, z: 27.044}
+  m_LocalScale: {x: 10.362323, y: 11.532, z: -38.355236}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 038980f5f63275f4cb097dd5f9a63ab1, type: 2}
+  - {fileID: 2100000, guid: 52a339c4dc5e47c4a805025d279a428c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,3 +97,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &397020937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3299710627514413189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1146ee715031e8a47bc0820b22913977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementVector: {x: 0, y: 0, z: 0}
+  movementFactor: {x: 0, y: 0, z: 0}
